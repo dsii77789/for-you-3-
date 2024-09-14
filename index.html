@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Click the button to see my feelings for you</h1>
+        <button id="revealbutton"reveal>Reveal</button>
+        <div id="heartcontainer" class="hidden">
+            <div class="heart"></div>
+            <img src="gambar/heart-solid.svg" width="150px" height="150px">
+            <p>I LOVE YOU!<3</p>
+            <h5>You're the code that compiles my heart^_^</h5>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById('revealbutton').addEventListener('click',function(){
+        document.getElementById('heartcontainer').classList.remove('hidden');
+    });
+</script>
+</html>
